@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  server:
+    container_name: integrator
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: ["./scripts/entrypoint.sh"]
+    env_file:
+      - .env
+    ports:
+      - "9000:8000"
+    volumes:
+      - ./app:/src/app
+      - ./scripts:/src/scripts
+      - ./tests:/src/tests

@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "request-integrator"
+version = "0.1.0"
+description = ""
+authors = ["Daniel <daniel.restrepo@simetrik.com>", "Daniel <leonardo.diaz@simetrik.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.109.0"
+httpx = "^0.27.0"
+uvicorn = "^0.27.1"
+pydantic = "^2.0.1"
+pydantic-settings = "^2.2.0"
+
+[tool.poetry.dev-dependencies]
+Faker = "^20.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
